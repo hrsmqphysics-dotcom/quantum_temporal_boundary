@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 class QuantumTimeEmergenceExperiment:
 
-    def _init_(self, f0=6.676e-10):
+    def __init__(self, f0=6.676e-10):
 
         self.f0 = f0
 
@@ -276,5 +276,6 @@ print(f"\n🎉 EXPERIMENTO COMPLETADO EXITOSAMENTE")
 print(f"├── Tiempo de emergencia detectado: {t_emerge:.1f} s")
 
 print(f"├── Entropía máxima alcanzada: {np.max(entropy):.3f} k_B")
+
 
 print(f"└── Frecuencia fundamental confirmada: {experiment.f0:.3e} Hz")
